@@ -1,10 +1,12 @@
-import React, { createContext, useEffect, useState } from "react";
-import axios from "axios";
+// import React, { createContext, useEffect, useState } from "react";
+import React, { createContext } from "react";
+// import axios from "axios";
 
 const AuthContext = createContext();
 
 function AuthContextProvider(props) {
-  const [loggedIn, setLoggedIn] = useState(false);
+  // const [loggedIn, setLoggedIn] = useState(false);
+  let loggedIn = false;
 
   // async function getLoggedIn() {
   //   const loggedInRes = await axios.get("/auth/loggedIn");
