@@ -9,7 +9,7 @@ function Logout() {
     const history = useHistory();
 
     async function logout() {
-        await axios.get("https://uzer-auth.herokuapp.com/auth/logout");
+        await axios.get("/auth/logout");
         getLoggedIn();
         history.push('/login');
     }

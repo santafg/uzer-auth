@@ -16,7 +16,7 @@ const Login = () => {
         try {
           const loginData = { email, password };
     
-          await axios.post("https://uzer-auth.herokuapp.com/auth/login", loginData 
+          await axios.post("/auth/login", loginData 
           );
           getLoggedIn();
 

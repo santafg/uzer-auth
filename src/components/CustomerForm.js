@@ -10,7 +10,7 @@ function CustomerForm({getCustomers}) {
           const customerData = {
               name:customerName
           }
-          await axios.post('https://uzer-auth.herokuapp.com/customer/' , customerData);
+          await axios.post('/customer' , customerData);
           // window.alert(`${customerName}  is added`);
           setCustomerName('');
           getCustomers();

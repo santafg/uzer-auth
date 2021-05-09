@@ -8,7 +8,7 @@ const Customer = () => {
     const [customers, setCustomers] = useState([]);
 
     async  function getCustomers() {
-        const customersDatas = await axios.get('https://uzer-auth.herokuapp.com/customer/');
+        const customersDatas = await axios.get('/customer');
         setCustomers(customersDatas.data);
     }
     useEffect(() => {

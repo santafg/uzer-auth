@@ -12,7 +12,7 @@ const Register = () => {
     try {
       const registerData = { email, password, passwordVerify };
 
-      await axios.post("https://uzer-auth.herokuapp.com/auth/", registerData 
+      await axios.post("/auth", registerData 
       );
     } catch (error) {
       console.log(error);
